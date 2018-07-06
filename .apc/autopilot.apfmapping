@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="corpo.cpp" path="C:\Users\madso\Desktop\ProjetoFinal\corpo.cpp"/>
+    <originFiles name="header.h" path="C:\Users\madso\Desktop\ProjetoFinal\header.h"/>
+  </source>
+  <testbench>
+    <originFiles name="teste.cpp" path="C:\Users\madso\Desktop\ProjetoFinal\teste.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
