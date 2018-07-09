@@ -1,16 +1,5 @@
 #include "header.h"
 
-void saveImage(const std::string path, cv::InputArray inArr)
-{
-    double min;
-    double max;
-    cv::minMaxIdx(inArr, &min, &max);
-    cv::Mat adjMap;
-    cv::convertScaleAbs(inArr, adjMap, 255 / max);
-    cv::imwrite(path,adjMap);
-}
-
-
 void Boundary(hls::stream<uint_8_side_channel> &inStream, hls::stream<int_8_side_channel> &outStream, hls::stream<uint_8_side_channel> &inStreamLS, char kernel[KERNEL_DIM*KERNEL_DIM], int c0,int c1, int iteracoes){
 
     int c2=0; int c3=0;
@@ -27,8 +16,10 @@ void Boundary(hls::stream<uint_8_side_channel> &inStream, hls::stream<int_8_side
     uint_8_side_channel currPixelSideChannelLS;
 
     unsigned char matrizLS [262144];
-    unsigned char matriz2 [262144];
-    unsigned char matriz [262144];
+    //unsigned char matriz2 [262144];
+    //unsigned char matriz [262144];
+    ap_uint<1> matriz [262144];
+    ap_uint<1> matriz2 [262144];
 
     unsigned char pixelIn;
     unsigned char pixelInLS;
@@ -213,7 +204,7 @@ for(int z = 0; z< iteracoes; z++){        //iteracoes
         }
         c0=c2/m;
         c1=c3/n;
-        printf("c0 = %ld/%ld = %ld   c1 = %ld/%ld = %ld \n",c2,m,c0,c3,n,c1);
+        //printf("c0 = %ld/%ld = %ld   c1 = %ld/%ld = %ld \n",c2,m,c0,c3,n,c1);
     }
 }
 int min(int a, int b, int c){
