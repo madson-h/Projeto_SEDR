@@ -113,7 +113,12 @@ int main(){
     // Save image out file or display
         if (imageSrc.rows > 12){
             printf("Saving image\n");
-            saveImage(std::string(nome) ,imgCvOut);
+            double min;
+        	double max;
+        	cv::minMaxIdx(imgCvOut, &min, &max);
+        	cv::Mat adjMap;
+        	cv::convertScaleAbs(imgCvOut, adjMap, 255 / max);
+        	cv::imwrite(std::string(nome),adjMap);
         }
     }
     return 0;

@@ -1,8 +1,8 @@
 #include "hls_video.h"
-#include <ap_axi_sdata.h>
-#include <stdio.h>
-#include <opencv2/core/core.hpp>
-#include <hls_opencv.h>
+//#include <ap_axi_sdata.h>
+//#include <stdio.h>
+//#include "core.hpp"
+//#include <hls_opencv.h>
 
 #define IMG_WIDTH_OR_COLS 512
 #define IMG_HEIGHT_OR_ROWS 512
@@ -12,8 +12,6 @@ typedef ap_axiu<8,2,5,6> uint_8_side_channel;
 typedef ap_axis<8,2,5,6> int_8_side_channel;
 
 void Boundary(hls::stream<uint_8_side_channel> &inStream, hls::stream<int_8_side_channel> &outStream,  hls::stream<uint_8_side_channel> &inStreamLS, char kernel[KERNEL_DIM*KERNEL_DIM], int c0, int c1, int iteracoes);
-
-void saveImage(const std::string path, cv::InputArray inArr);
 
 int max(int a, int b, int c);
 

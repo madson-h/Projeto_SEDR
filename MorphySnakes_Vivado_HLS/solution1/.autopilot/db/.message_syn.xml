@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;ProjetoFinal/corpo.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1378" content="ProjetoFinal/corpo.cpp:73:55: warning: &apos;/*&apos; within block comment [-Wcomment]
+                if(idxPixel &lt;512 || idxPixel &gt; 261120 /*|| idxPixel%%512 == 0 || idxPixel%%511 == 0*///){
+                                                      ^
+ProjetoFinal/corpo.cpp:89:55: warning: &apos;/*&apos; within block comment [-Wcomment]
+                if(idxPixel &lt;512 || idxPixel &gt; 261120 /*|| idxPixel%%512 == 0 || idxPixel%%511 == 0){*/
+                                                      ^
+ProjetoFinal/corpo.cpp:360:13: warning: &apos;/*&apos; within block comment [-Wcomment]
+            /*if(z%%2 == 0){
+            ^
+ProjetoFinal/corpo.cpp:361:55: warning: &apos;/*&apos; within block comment [-Wcomment]
+                if(idxPixel &lt;512 || idxPixel &gt; 261120 /*|| idxPixel%%512 == 0 || idxPixel%%511 == 0*///){
+                                                      ^
+ProjetoFinal/corpo.cpp:377:55: warning: &apos;/*&apos; within block comment [-Wcomment]
+                if(idxPixel &lt;512 || idxPixel &gt; 261120 /*|| idxPixel%%512 == 0 || idxPixel%%511 == 0){*/
+                                                      ^
+ProjetoFinal/corpo.cpp:402:10: warning: &apos;/*&apos; within block comment [-Wcomment]
+                /*
+                ^
+ProjetoFinal/corpo.cpp:439:10: warning: &apos;/*&apos; within block comment [-Wcomment]
+                /*
+                ^
+ProjetoFinal/corpo.cpp:482:9: warning: &apos;/*&apos; within block comment [-Wcomment]
+        /*
+        ^
+8 warnings generated." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1378" content="In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:178:21: error: no matching function for call to &apos;operacoemorfsi&apos;
+           pmatriz2=operacoemorfsi(pmatriz,pmatriz[idxPixell-512],pmatriz[idxPixell+512],pmatriz[idxPixell-1],pmatriz[idxPixell+1],pmatriz[idxPixell-511],pmatriz[idxPixell-513],pmatriz[idxPixell+513],pmatriz[idxPixell+511]);
+                    ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:26:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:181:20: error: no matching function for call to &apos;operacoemorfis&apos;
+           pmatriz=operacoemorfis(pmatriz2,pmatriz2[idxPixell-512],pmatriz2[idxPixell+512],pmatriz2[idxPixell-1],pmatriz2[idxPixell+1],pmatriz2[idxPixell-511],pmatriz2[idxPixell-513],pmatriz2[idxPixell+513],pmatriz2[idxPixell+511]);
+                   ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:24:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:184:21: error: no matching function for call to &apos;operacoemorfsi&apos;
+           pmatriz2=operacoemorfsi(pmatriz,pmatriz[idxPixell-512],pmatriz[idxPixell+512],pmatriz[idxPixell-1],pmatriz[idxPixell+1],pmatriz[idxPixell-511],pmatriz[idxPixell-513],pmatriz[idxPixell+513],pmatriz[idxPixell+511]);
+                    ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:26:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:187:20: error: no matching function for call to &apos;operacoemorfis&apos;
+           pmatriz=operacoemorfis(pmatriz2,pmatriz2[idxPixell-512],pmatriz2[idxPixell+512],pmatriz2[idxPixell-1],pmatriz2[idxPixell+1],pmatriz2[idxPixell-511],pmatriz2[idxPixell-513],pmatriz2[idxPixell+513],pmatriz2[idxPixell+511]);
+                   ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:24:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:273:7: error: functions that differ only in their return type cannot be overloaded
+char* operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft){
+      ^
+ProjetoFinal/header.h:26:5: note: previous declaration is here
+int operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:280:9: error: cannot initialize return object of type &apos;char *&apos; with an lvalue of type &apos;int&apos;
+ return e;
+        ^
+ProjetoFinal/corpo.cpp:283:7: error: functions that differ only in their return type cannot be overloaded
+char* operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft){
+      ^
+ProjetoFinal/header.h:24:5: note: previous declaration is here
+int operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:290:9: error: cannot initialize return object of type &apos;char *&apos; with an lvalue of type &apos;int&apos;
+ return e;
+        ^
+8 errors generated." tag=""/>
+	<Message prefix="[HLS 200-70]" severity="ERROR" keynum="HLS_70_1454" content="Compilation errors found:
+Pragma processor failed: In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:178:21: error: no matching function for call to &apos;operacoemorfsi&apos;
+           pmatriz2=operacoemorfsi(pmatriz,pmatriz[idxPixell-512],pmatriz[idxPixell+512],pmatriz[idxPixell-1],pmatriz[idxPixell+1],pmatriz[idxPixell-511],pmatriz[idxPixell-513],pmatriz[idxPixell+513],pmatriz[idxPixell+511]);
+                    ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:26:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:181:20: error: no matching function for call to &apos;operacoemorfis&apos;
+           pmatriz=operacoemorfis(pmatriz2,pmatriz2[idxPixell-512],pmatriz2[idxPixell+512],pmatriz2[idxPixell-1],pmatriz2[idxPixell+1],pmatriz2[idxPixell-511],pmatriz2[idxPixell-513],pmatriz2[idxPixell+513],pmatriz2[idxPixell+511]);
+                   ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:24:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:184:21: error: no matching function for call to &apos;operacoemorfsi&apos;
+           pmatriz2=operacoemorfsi(pmatriz,pmatriz[idxPixell-512],pmatriz[idxPixell+512],pmatriz[idxPixell-1],pmatriz[idxPixell+1],pmatriz[idxPixell-511],pmatriz[idxPixell-513],pmatriz[idxPixell+513],pmatriz[idxPixell+511]);
+                    ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:26:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:187:20: error: no matching function for call to &apos;operacoemorfis&apos;
+           pmatriz=operacoemorfis(pmatriz2,pmatriz2[idxPixell-512],pmatriz2[idxPixell+512],pmatriz2[idxPixell-1],pmatriz2[idxPixell+1],pmatriz2[idxPixell-511],pmatriz2[idxPixell-513],pmatriz2[idxPixell+513],pmatriz2[idxPixell+511]);
+                   ^~~~~~~~~~~~~~
+ProjetoFinal/header.h:24:5: note: candidate function not viable: no known conversion from &apos;char *&apos; to &apos;int&apos; for 1st argument; dereference the argument with *
+int operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:273:7: error: functions that differ only in their return type cannot be overloaded
+char* operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft){
+      ^
+ProjetoFinal/header.h:26:5: note: previous declaration is here
+int operacoemorfsi(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:280:9: error: cannot initialize return object of type &apos;char *&apos; with an lvalue of type &apos;int&apos;
+ return e;
+        ^
+ProjetoFinal/corpo.cpp:283:7: error: functions that differ only in their return type cannot be overloaded
+char* operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft){
+      ^
+ProjetoFinal/header.h:24:5: note: previous declaration is here
+int operacoemorfis(int pixel, int up, int down, int left, int right, int upright, int upleft, int downright, int downleft);
+    ^
+In file included from ProjetoFinal/corpo.cpp:1:
+ProjetoFinal/corpo.cpp:290:9: error: cannot initialize return object of type &apos;char *&apos; with an lvalue of type &apos;int&apos;
+ return e;
+        ^
+8 errors generated." tag=""/>
+	<Message prefix="[HLS 200-150]" severity="INFO" keynum="11" content="Failed checking during preprocessing.
+    while executing
+&quot;source C:/Users/madso/Desktop/ProjetoFinal/solution1/csynth.tcl&quot;
+    invoked from within
+&quot;hls::main C:/Users/madso/Desktop/ProjetoFinal/solution1/csynth.tcl&quot;
+    (&quot;uplevel&quot; body line 1)
+    invoked from within
+&quot;uplevel 1 hls::main {*}$args&quot;
+    (procedure &quot;hls_proc&quot; line 5)
+    invoked from within
+&quot;hls_proc $argv&quot;" tag=""/>
+</Messages>

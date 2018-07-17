@@ -50,33 +50,4 @@ obj/corpo.o: ../../../corpo.cpp ../../../header.h \
  C:/Xilinx2/Vivado/2018.1/include/hls/hls_video_hough.h \
  C:/Xilinx2/Vivado/2018.1/include/hls/hls_video_harris.h \
  C:/Xilinx2/Vivado/2018.1/include/hls/hls_video_haar.h \
- C:/Xilinx2/Vivado/2018.1/include/hls/hls_video_stereobm.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/core/core.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/core/types_c.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/core/version.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/core/operations.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/core/mat.hpp \
- C:/Xilinx2/Vivado/2018.1/include/hls_opencv.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/opencv.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/core/core_c.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/flann/miniflann.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/flann/defines.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/flann/config.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/imgproc/imgproc_c.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/imgproc/types_c.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/imgproc/imgproc.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/photo/photo.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/photo/photo_c.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/video/video.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/video/tracking.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/video/background_segm.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/features2d/features2d.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/objdetect/objdetect.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/calib3d/calib3d.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/ml/ml.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/highgui/highgui_c.h \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/highgui/highgui.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/contrib/contrib.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/contrib/retina.hpp \
- C:/Xilinx2/Vivado/2018.1/include/opencv2/contrib/openfabmap.hpp \
- C:/Xilinx2/Vivado/2018.1/include/hls_video.h
+ C:/Xilinx2/Vivado/2018.1/include/hls/hls_video_stereobm.h

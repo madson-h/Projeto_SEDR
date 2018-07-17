@@ -4,6 +4,7 @@
 ## Copyright (C) 1986-2018 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project ProjetoFinal
+set_top Boundary
 add_files ProjetoFinal/corpo.cpp
 add_files ProjetoFinal/header.h
 add_files -tb ProjetoFinal/teste.cpp
